@@ -6,7 +6,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   -moz-animation-duration: 2s;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
@@ -54,55 +53,4 @@ header {
   to {
     opacity: 1;
   }
-}
-
-.header2 {
-  position: absolute;
-  display: block;
-  width: auto;
-  top: 55px;
-  left: 50%;
-  margin-top: 0px;
-  padding-top: 0px;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  color: #5d00ffc2;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 44px;
-  text-align: center;
-  align-items: center;
-}
-
-/* 2 page  */
-
-.backicon {
-  position: absolute;
-  border-radius: 50%;
-  left: 30px;
-  top: 30px;
-  width: 50px;
-  height: 50px;
-}
-
-.backimg {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  border-radius: 50%;
-  border-color: #5d00ff;
-  border-style: outset;
-  box-shadow: 1px 1px 8px 1px rgba(12, 12, 12, 0.38);
-  width: 50px;
-  height: 50px;
-  transition: box-shadow, 0.3s;
-  -webkit-transition: box-shadow, 0.3s;
-}
-.backimg:hover {
-  box-shadow: 1px 1px 5px -1px rgba(12, 12, 12, 0.5);
-}
-.backimg:active {
-  box-shadow: none;
-  background: #5d00ff;
 }

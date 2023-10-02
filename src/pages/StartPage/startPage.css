@@ -1,3 +1,4 @@
+@import "../../styles/variables.css";
 .start-page {
   position: relative;
   align-items: center;
@@ -17,9 +18,9 @@
 .name-game {
   position: absolute;
   left: 0px;
-  top: 8%;
+  top: 26%;
   width: 100%;
-  height: 79px;
+  padding: 16px;
   margin-top: 0%;
   color: #5d00ff;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
