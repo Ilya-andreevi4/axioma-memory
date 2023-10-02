@@ -33,6 +33,7 @@
   background: white;
   height: max-content;
   width: 30%;
+  min-width: 320px;
   transition: 0.5s all;
 }
 
