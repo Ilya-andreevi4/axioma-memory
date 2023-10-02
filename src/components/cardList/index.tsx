@@ -80,6 +80,7 @@ export default function CardsList({ className }: Props) {
                     alt=""
                     src={openedCards.get(idx) ? card.imgSrc : card.back}
                     className={"cardImg"}
+                    draggable="false"
                     style={{
                       display: resolvedCards.get(idx) ? "none" : "block",
                     }}
@@ -92,7 +93,7 @@ export default function CardsList({ className }: Props) {
         ) : (
           <Settings active={modalActive} setActive={setModalActive}>
             <>
-              <p>Поздравляю! Вы открыли все пары карт!</p>
+              <h2>Поздравляю! Вы открыли все пары карт!</h2>
               <p>Всего ходов: {count}</p>
               <p>Время прохождения: {time}</p>
               <Link to="/" className="quitButton">

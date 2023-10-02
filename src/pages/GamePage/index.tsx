@@ -12,7 +12,12 @@ const GamePage = () => {
     <div className="gamePage">
       <div className="playersScores">
         <button className="settingsImg" onClick={() => setModalActive(true)}>
-          <img src={SettingsLogo} alt="Settings" className="settingIcon" />
+          <img
+            src={SettingsLogo}
+            alt="Settings"
+            draggable="false"
+            className="settingIcon"
+          />
         </button>
       </div>
 
