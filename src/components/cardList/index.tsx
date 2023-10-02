@@ -19,6 +19,7 @@ export default function CardsList({ className }: Props) {
   const [modalActive, setModalActive] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
   const [count, setCount] = useState(0);
+  const [time, setTime] = useState("00:00");
 
   useEffect(() => {
     if (openedCards.size === 2) {
@@ -68,10 +69,7 @@ export default function CardsList({ className }: Props) {
 
   return (
     <>
-      {/* <div className="countBox">
-        <h2>Количество ходов: {count}</h2>
-      </div> */}
-      <Scoreboard count={count} />
+      <Scoreboard count={count} isComplete={isComplete} setTime={setTime} />
       <div className="table">
         {!isComplete ? (
           <div className={className}>
@@ -96,6 +94,7 @@ export default function CardsList({ className }: Props) {
             <>
               <p>Поздравляю! Вы открыли все пары карт!</p>
               <p>Всего ходов: {count}</p>
+              <p>Время прохождения: {time}</p>
               <Link to="/" className="quitButton">
                 <span className="textQuit">Повторить</span>
               </Link>
