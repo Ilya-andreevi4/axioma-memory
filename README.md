@@ -11,12 +11,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## About
 
 This is a simple memory development project. Designed specifically for children studying at Axioma School.
-In the project, I used such React Hooks as:
-
-- `useMemo()`
-- `useState()`
-- `useEffect()`
-- `useCallback()`
+In the project, I used vite, react, ts, react-router-dom, functional components with react hooks.
 
 ## Available Scripts
 
