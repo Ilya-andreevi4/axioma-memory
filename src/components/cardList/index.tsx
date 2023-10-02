@@ -5,6 +5,7 @@ import cards from "@/utils/cardsData";
 import { ICard } from "@/models/ICard";
 import randomizeCards from "@/utils/randomize";
 import "./cardList.css";
+import Scoreboard from "../scoreboard";
 
 interface Props {
   className: string;
@@ -67,9 +68,10 @@ export default function CardsList({ className }: Props) {
 
   return (
     <>
-      <div className="countBox">
+      {/* <div className="countBox">
         <h2>Количество ходов: {count}</h2>
-      </div>
+      </div> */}
+      <Scoreboard count={count} />
       <div className="table">
         {!isComplete ? (
           <div className={className}>
