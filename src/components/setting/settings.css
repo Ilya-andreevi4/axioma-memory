@@ -1,0 +1,92 @@
+.modalSettings {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(150, 150, 150, 0.4);
+  box-shadow:
+    1px 1px 5px 0 rgba(0, 0, 0, 0.151),
+    1px 1px 8px 1 rgba(0, 0, 0, 0.151);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.modalSettings.active {
+  opacity: 1;
+  pointer-events: all;
+  z-index: 4000;
+}
+
+.modalContent {
+  display: inline-grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #0169d8;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  height: max-content;
+  width: 30%;
+  transition: 0.5s all;
+}
+
+.modalContent.active {
+  transform: scale(1);
+}
+
+/* Кнопка выхода */
+
+.quitButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  width: 60%;
+  height: 32px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-style: none;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 50px;
+  color: #000;
+  background: #fff;
+  background-blend-mode: normal;
+  box-shadow: 0px 0px 2px 0px rgba(255, 0, 0, 0.48);
+  transition: 0.3s;
+}
+
+.quitButton:hover {
+  box-shadow:
+    0px 0px 4px 0px rgba(255, 0, 0, 0.48),
+    0px 0px 14px 0px rgba(255, 0, 0, 0.48);
+}
+
+.quitButton:active {
+  color: rgb(255, 255, 255);
+  border-radius: 40px;
+  box-shadow: none;
+  background: rgb(214, 32, 0);
+  border-color: "#005cbf";
+}
+
+.textQuit {
+  margin: 0px;
+  display: inline-block;
+  text-transform: uppercase;
+  position: absolute;
+  line-height: 32px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 550;
+  text-align: center;
+}
